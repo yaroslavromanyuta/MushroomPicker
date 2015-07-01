@@ -14,7 +14,7 @@ public final class ProjectConstants {
     static final public int GPS_LOCATION_CHANGED = 1;
     static final public int GPS_TURNED_OF = 2;
     static final public int GPS_TURNED_ON = 3;
-    public static final String SVC_test = "test git";
+
 
     private ProjectConstants (){
     }
