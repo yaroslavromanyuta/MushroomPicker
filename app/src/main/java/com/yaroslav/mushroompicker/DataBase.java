@@ -35,6 +35,7 @@ public class DataBase {
     private DBHelper mDBHelper;
     private SQLiteDatabase mDB;
 
+    //конструктор нашего класса для работы с базой данных
     public DataBase(Context ctx) {
         mCtx = ctx;
     }
