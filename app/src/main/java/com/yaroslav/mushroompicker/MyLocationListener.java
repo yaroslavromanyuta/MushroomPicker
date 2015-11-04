@@ -14,12 +14,12 @@ import static com.yaroslav.mushroompicker.ProjectConstants.*;
 public class MyLocationListener implements LocationListener {
 
     // здесь будет всегда доступна самая последняя информация о местоположении пользователя
-    static Location imHere = null;
-    static Handler handler = null;
+    Location imHere = null;
+    private static Handler handler = null;
     Message msg ;
 
 
-    public static void SetUpLocationListener(Context context)
+    public void SetUpLocationListener(Context context)
     {
 
         LocationManager locationManager = (LocationManager)

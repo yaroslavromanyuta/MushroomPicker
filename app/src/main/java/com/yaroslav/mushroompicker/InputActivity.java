@@ -86,8 +86,8 @@ public class InputActivity extends Activity{
             switch (msg.what){
                 case (GPS_LOCATION_CHANGED):
                     location = (Location) msg.obj;
-                    location_str = String.valueOf(MyLocationListener.imHere.getLatitude())+" "
-                            + String.valueOf(MyLocationListener.imHere.getLongitude());
+                    location_str = String.valueOf(location.getLatitude())+" "
+                            + String.valueOf(location.getLongitude());
                     txt_location.setText("Координаты" + location_str);
                     if (msg.obj==null)
                         btn_save.setEnabled(false);
@@ -119,6 +119,7 @@ public class InputActivity extends Activity{
 
             String[] filePath = { MediaStore.Images.Media.DATA };
             Cursor cursor = getContentResolver().query(selectedImage, filePath, null, null, null);
+            if (cursor == null) throw new AssertionError();
             cursor.moveToFirst();
             photo = cursor.getString(cursor.getColumnIndex(filePath[0]));
             imageView.setImageURI(Uri.parse(photo));
@@ -171,11 +172,11 @@ public class InputActivity extends Activity{
                 setResult(RESULT_OK, intent);
                 finish();}
             else if (mode.contains("add")) {
-                if (MyLocationListener.imHere == null)
+                if (location == null)
                     Toast.makeText(getBaseContext(), R.string.txt_gps_status, Toast.LENGTH_LONG).show();
                 else {
-                    location_str = String.valueOf(MyLocationListener.imHere.getLatitude())+" "
-                            + String.valueOf(MyLocationListener.imHere.getLongitude());
+                    location_str = String.valueOf(location.getLatitude())+" "
+                            + String.valueOf(location.getLongitude());
                     intent.putExtra(INTENT_KEY_LOCATION, location_str);
                     setResult(RESULT_OK, intent);
                     finish();

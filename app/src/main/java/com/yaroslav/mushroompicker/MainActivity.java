@@ -58,16 +58,13 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                MyLocationListener.SetUpLocationListener(mainContext);
+               new MyLocationListener ().SetUpLocationListener(mainContext);
             }
         };
          thread = new Thread(runnable);
         //так запускается
          thread.run();
-        //а так нет???
-        //thread.start();
 
-       // MyLocationListener.SetUpLocationListener(this);
         edt_txt_pointname = (EditText) findViewById(R.id.edt_txt_pointname);
         edt_txt_aboutpoint = (EditText) findViewById(R.id.edt_txt_aboutpoint);
         edt_txt_search = (EditText)findViewById(R.id.edt_txt_search);
@@ -105,9 +102,6 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
                 filter = s.toString();
 
                 getLoaderManager().restartLoader(0, null, MainActivity.this);
-
-
-
             }
 
             @Override
