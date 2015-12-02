@@ -3,7 +3,7 @@
 
     <string name="edt_txt_pointname">Название точки</string>
     <string name="edt_txt_aboutpoint">Описание точки</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings" translatable="false">Settings</string>
     <string name="btn_get_gps">Получить координаты</string>
     <string name="btn_save_point">Добавить точку</string>
     <string name="btn_save">Сохранить</string>
