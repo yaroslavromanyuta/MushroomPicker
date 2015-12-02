@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Back to place</string>
+    <string name="btn_del_point">Delete</string>
+    <string name="btn_find">Find</string>
+    <string name="btn_get_gps">Get location</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_save_point">Add point</string>
+    <string name="btn_spisok">Pointlist</string>
+    <string name="btn_to_list">Go to pointlist</string>
+    <string name="delete_record">Delete</string>
+    <string name="dtn_to_map">On map</string>
+    <string name="edit_record">Edit</string>
+    <string name="edt_txt_aboutpoint">Description</string>
+    <string name="edt_txt_pointname" translatable="false">Pointname</string>
+    <string name="input_text">Fill in all the fields</string>
+    <string name="swow_record">Show on the map</string>
+    <string name="txt_gps_koord">Coordinates</string>
+    <string name="txt_gps_status">Coordinates are not received</string>
+    <string name="txt_pointname">Name</string>
+    <string name="txt_search">Search</string>
+</resources>

@@ -8,11 +8,11 @@
     <string name="btn_save_point">Добавить точку</string>
     <string name="btn_save">Сохранить</string>
     <string name="btn_spisok">Список мест</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
     <string name="btn_del_point">Удалить</string>
     <string name="btn_find">Найти</string>
     <string name="dtn_to_map">На карту</string>
-    <string name="title_activity_map">Map</string>
+    <string name="title_activity_map" translatable="false">Map</string>
     <string name="txt_gps_koord">Координаты</string>
     <string name="txt_gps_status">Координаты не получены</string>
     <string name="txt_pointname">Название</string>
@@ -22,12 +22,12 @@
     <string name="swow_record">Показать на карте</string>
     <string name="edit_record">Редактировать запись</string>
     <string name="add_record">Новая запись</string>
-    <string name="title_activity_input">InputActivity</string>
+    <string name="title_activity_input" translatable="false">InputActivity</string>
     <string name="input_text">Заполните все поля</string>
 
 
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_show">ShowActivity</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="title_activity_show" translatable="false">ShowActivity</string>
 
 
 </resources>
